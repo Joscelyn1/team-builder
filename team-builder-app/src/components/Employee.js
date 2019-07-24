@@ -5,10 +5,10 @@ function Employee(props) {
   return (
     <Card className="employee-card">
       <Card.Content>
-        <Card.Header>{props.info.name}</Card.Header>
+        <Card.Header>{props.name}</Card.Header>
         <List>
-          <List.Item>Role: {props.info.role}</List.Item>
-          <List.Item>Email: {props.info.email}</List.Item>
+          <List.Item>Role: {props.role}</List.Item>
+          <List.Item>Email: {props.email}</List.Item>
         </List>
       </Card.Content>
     </Card>

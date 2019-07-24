@@ -23,3 +23,7 @@ code {
 .employee-card {
   height: 300px;
 }
+
+.ui.card.new-employee-form {
+  margin: 0 auto 30px auto;
+}

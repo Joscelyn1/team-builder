@@ -2,7 +2,7 @@ export const people = [
   {
     name: "Tony Stark",
     id: 1,
-    email: "onesexygenius@starkindustries.com",
+    email: "sexygenius@starkindustries.com",
     role: "inventor"
   },
   {

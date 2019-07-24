@@ -4,11 +4,15 @@ import { people } from "../data.js";
 
 function ListOfEmployees() {
   const employees = people.map(person => (
-    <Employee key={person.id} info={person} />
+    <Employee
+      key={person.id}
+      name={person.name}
+      email={person.email}
+      role={person.role}
+    />
   ));
   return (
     <div>
-      <button>Add new employee</button>
       <div className="list-of-employees">{employees}</div>
     </div>
   );

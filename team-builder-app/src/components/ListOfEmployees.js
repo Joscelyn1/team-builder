@@ -1,9 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import Employee from "./Employee.js";
-import { people } from "../data.js";
 
-function ListOfEmployees() {
-  const employees = people.map(person => (
+function ListOfEmployees(props) {
+  const employees = props.members.map(person => (
     <Employee
       key={person.id}
       name={person.name}

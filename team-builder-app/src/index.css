@@ -27,3 +27,8 @@ code {
 .ui.card.new-employee-form {
   margin: 0 auto 30px auto;
 }
+
+#buttons {
+  display: flex;
+  justify-content: flex-end;
+}

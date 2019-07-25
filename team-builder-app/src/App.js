@@ -17,11 +17,20 @@ function App() {
     setMembers([...members, person]);
   }
 
+  function removeFromMembers(index) {
+    const newMembers = members.splice(index, 1);
+    setMembers([...newMembers]);
+  }
+
   return (
     <div className="App">
       <Header />
       <NewEmployee id={id} members={members} addToMembers={addToMembers} />
-      <ListOfEmployees members={members} addToMembers={addToMembers} />
+      <ListOfEmployees
+        members={members}
+        removeFromMembers={removeFromMembers}
+        addToMembers={addToMembers}
+      />
       <Footer />
     </div>
   );

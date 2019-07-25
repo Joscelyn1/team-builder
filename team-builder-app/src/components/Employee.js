@@ -2,6 +2,7 @@ import React from "react";
 import { Card, List, Icon } from "semantic-ui-react";
 
 function Employee(props) {
+  /*onClick={props.removeFromMembers(props.id)}*/
   return (
     <Card className="employee-card">
       <Card.Content>

@@ -8,6 +8,7 @@ function ListOfEmployees(props) {
       name={person.name}
       email={person.email}
       role={person.role}
+      removeFromMembers={props.removeFromMembers}
     />
   ));
   return (

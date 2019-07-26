@@ -1,5 +1,6 @@
 import React from "react";
 import { Card, List, Icon } from "semantic-ui-react";
+import { Link } from "react-router-dom";
 
 function Employee(props) {
   /*onClick={props.removeFromMembers(props.id)}*/
@@ -7,7 +8,9 @@ function Employee(props) {
     <Card className="employee-card">
       <Card.Content>
         <Card.Header id="buttons">
-          <Icon name="edit" />
+          <Link to={`/edit/${props.id}`}>
+            <Icon name="edit" />
+          </Link>
           <Icon name="close" />
         </Card.Header>
         <Card.Header>{props.name}</Card.Header>

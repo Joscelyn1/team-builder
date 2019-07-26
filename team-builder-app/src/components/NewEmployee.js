@@ -21,7 +21,7 @@ function NewEmployee(props) {
 
   return (
     <Card className="new-employee-form">
-      <Form onSubmit={event => handleSubmit(event)}>
+      <Form onSubmit={handleSubmit}>
         <Form.Field>
           <label>Name</label>
           <input
